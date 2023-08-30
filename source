@@ -781,7 +781,7 @@ function library:Introduction()
     xsx.Font = Enum.Font.Code
     xsx.Text = "Dea"
     xsx.TextColor3 = Color3.fromRGB(124, 124, 124)
-    xsx.TextSize = 15.000
+    xsx.TextSize = 13.000
     xsx.TextTransparency = 1
     
     text.Name = "text"
@@ -791,9 +791,9 @@ function library:Introduction()
     text.Position = UDim2.new(0.912751675, 0, 0, 0)
     text.Size = UDim2.new(0, 26, 0, 21)
     text.Font = Enum.Font.Code
-    text.Text = ".vip"
+    text.Text = "vip"
     text.TextColor3 = Color3.fromRGB(124, 124, 124)
-    text.TextSize = 15.000
+    text.TextSize = 13.000
     text.TextTransparency = 1
     text.RichText = true
     
