@@ -237,9 +237,9 @@ function library:Watermark(text)
 
     edge.Name = "edge"
     edge.Parent = watermark
-    edge.AnchorPoint = Vector2.new(0.5, 0.5)
+    edge.AnchorPoint = Vector2.new(0, 0)
     edge.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-    edge.Position = UDim2.new(0.5, 0, -0.03, 0)
+    edge.Position = UDim2.new(0, 0, 0.03, 0)
     edge.Size = UDim2.new(0, 0, 0, 26)
     edge.BackgroundTransparency = 1
 
@@ -249,15 +249,16 @@ function library:Watermark(text)
 
     background.Name = "background"
     background.Parent = edge
-    background.AnchorPoint = Vector2.new(0.5, 0.5)
+    background.AnchorPoint = Vector2.new(0, 0)
     background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     background.BackgroundTransparency = 1
     background.ClipsDescendants = true
-    background.Position = UDim2.new(0.5, 0, 0.5, 0)
+    background.Position = UDim2.new(0, 0, 0, 0)
     background.Size = UDim2.new(0, 0, 0, 24)
 
     barFolder.Name = "barFolder"
     barFolder.Parent = background
+    barFolder.Position = UDim2.new(0, 0, 1, 0)
 
     bar.Name = "bar"
     bar.Parent = barFolder
@@ -286,7 +287,7 @@ function library:Watermark(text)
     waterText.Parent = background
     waterText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     waterText.BackgroundTransparency = 1.000
-    waterText.Position = UDim2.new(0, 0, -0.0416666679, 0)
+    waterText.Position = UDim2.new(0, 0, 0, 0)
     waterText.Size = UDim2.new(0, 0, 0, 24)
     waterText.Font = Enum.Font.Code
     waterText.Text = text
