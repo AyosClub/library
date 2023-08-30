@@ -1,7 +1,8 @@
 --[[
   UI lib made by CompilerError.
+pasted by bungie
   
-  - Stfu bungie
+Pls stfu bungie
 ]]
 
 -- / Locals
@@ -77,6 +78,13 @@ local drag = function(obj, latency)
     end)
 end
 
+local library = {
+    version = "2.0.2",
+    title = title or "xsx " .. tostring(math.random(1,366)),
+    fps = 0,
+    rank = "private"
+}
+
 coroutine.wrap(function()
     RunService.RenderStepped:Connect(function(v)
         library.fps =  math.round(1/v)
@@ -85,6 +93,10 @@ end)()
 
 function library:RoundNumber(int, float)
     return tonumber(string.format("%." .. (int or 0) .. "f", float))
+end
+
+function library:GetUsername()
+    return Player.Name
 end
 
 function library:CheckIfLoaded()
@@ -177,6 +189,11 @@ function library:GetYear(type)
     end
 end
 
+function library:UnlockFps(new) -- syn only
+    if syn then
+        setfpscap(new)
+    end
+end
 
 function library:Watermark(text)
     for i,v in pairs(CoreGuiService:GetChildren()) do
@@ -185,7 +202,7 @@ function library:Watermark(text)
         end
     end
 
-    tetx = text or "Dea.vip "
+    tetx = text or "xsx v2"
 
     local watermark = Instance.new("ScreenGui")
     local watermarkPadding = Instance.new("UIPadding")
@@ -309,7 +326,7 @@ function library:Watermark(text)
 
     local WatermarkFunctions = {}
     function WatermarkFunctions:AddWatermark(text)
-        tetx = text or "Dea.vip"
+        tetx = text or "xsx v2"
 
         local edge = Instance.new("Frame")
         local edgeCorner = Instance.new("UICorner")
