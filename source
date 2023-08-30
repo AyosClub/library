@@ -1,7 +1,5 @@
 --[[
-  UI lib made by bungie#0001
-  
-
+  UI lib made by compiler bungie stfu
 ]]
 
 -- / Locals
@@ -78,7 +76,7 @@ local drag = function(obj, latency)
 end
 
 local library = {
-    version = "2.0.2",
+    version = "1.0.0.1",
     title = title or "xsx " .. tostring(math.random(1,366)),
     fps = 0,
     rank = "private"
@@ -237,9 +235,9 @@ function library:Watermark(text)
 
     edge.Name = "edge"
     edge.Parent = watermark
-    edge.AnchorPoint = Vector2.new(0, 0)
+    edge.AnchorPoint = Vector2.new(0.5, 0.5)
     edge.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-    edge.Position = UDim2.new(0, 0, 0.03, 0)
+    edge.Position = UDim2.new(0.5, 0, -0.03, 0)
     edge.Size = UDim2.new(0, 0, 0, 26)
     edge.BackgroundTransparency = 1
 
@@ -249,16 +247,15 @@ function library:Watermark(text)
 
     background.Name = "background"
     background.Parent = edge
-    background.AnchorPoint = Vector2.new(0, 0)
+    background.AnchorPoint = Vector2.new(0.5, 0.5)
     background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     background.BackgroundTransparency = 1
     background.ClipsDescendants = true
-    background.Position = UDim2.new(0, 0, 0, 0)
+    background.Position = UDim2.new(0.5, 0, 0.5, 0)
     background.Size = UDim2.new(0, 0, 0, 24)
 
     barFolder.Name = "barFolder"
     barFolder.Parent = background
-    barFolder.Position = UDim2.new(0, 0, 1, 0)
 
     bar.Name = "bar"
     bar.Parent = barFolder
@@ -287,7 +284,7 @@ function library:Watermark(text)
     waterText.Parent = background
     waterText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     waterText.BackgroundTransparency = 1.000
-    waterText.Position = UDim2.new(0, 0, 0, 0)
+    waterText.Position = UDim2.new(0, 0, -0.0416666679, 0)
     waterText.Size = UDim2.new(0, 0, 0, 24)
     waterText.Font = Enum.Font.Code
     waterText.Text = text
@@ -758,7 +755,7 @@ function library:Introduction()
     xsxLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
     xsxLogo.Size = UDim2.new(0, 448, 0, 150)
     xsxLogo.Visible = true
-    xsxLogo.Image = "http://www.roblox.com/asset/?id=14626189481"
+    xsxLogo.Image = "http://www.roblox.com/asset/?id=9365068051"
     xsxLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     xsxLogo.ImageTransparency = 1
     
@@ -770,7 +767,7 @@ function library:Introduction()
     hashLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
     hashLogo.Size = UDim2.new(0, 150, 0, 150)
     hashLogo.Visible = true
-    hashLogo.Image = "http://www.roblox.com/asset/?id=14626189481"
+    hashLogo.Image = "http://www.roblox.com/asset/?id=9365069861"
     hashLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     hashLogo.ImageTransparency = 1
     
@@ -782,7 +779,7 @@ function library:Introduction()
     xsx.Font = Enum.Font.Code
     xsx.Text = "Dea"
     xsx.TextColor3 = Color3.fromRGB(124, 124, 124)
-    xsx.TextSize = 13.000
+    xsx.TextSize = 12.000
     xsx.TextTransparency = 1
     
     text.Name = "text"
@@ -794,7 +791,7 @@ function library:Introduction()
     text.Font = Enum.Font.Code
     text.Text = "vip"
     text.TextColor3 = Color3.fromRGB(124, 124, 124)
-    text.TextSize = 13.000
+    text.TextSize = 12.000
     text.TextTransparency = 1
     text.RichText = true
     
